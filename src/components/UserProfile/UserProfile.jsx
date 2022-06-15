@@ -7,8 +7,8 @@ export default function UserProfile({ userProfile }) {
     <div className="col user-profile">
       <div className="card">
         <div className="card-bg" />
-        <CardContent />
-        <CardFooter />
+        <CardContent handle ={userProfile.handle} name = {userProfile.name}/>
+        <CardFooter numFollowers={userProfile.numFollowers} numTweets={userProfile.numTweets}/>
       </div>
     </div>
   )
